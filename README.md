@@ -2,13 +2,16 @@
 Check your Instargram Follower and following with python instaloader
 only `python3`
 
-## Setting
+## Local
+Local test with `main.py`
+
+### Setting
 for python module, 
 ```
 pip install instaloader
 ```
 
-## Execute
+### Execute
 ```
 python main.py
 Please input your id : Your ID
