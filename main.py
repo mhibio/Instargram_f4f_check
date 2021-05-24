@@ -1,10 +1,11 @@
 import instaloader
+import getpass
 
 # need "pip install instaloader"
 Loader = instaloader.Instaloader()
 
-username = ""
-password = open("./password.txt", 'rb').read().decode()
+username = input("Please input your id : ")
+password = getpass.getpass("Please input your password : ")
 Loader.login(username, password)
 
 profile = instaloader.Profile.from_username(Loader.context, username)
