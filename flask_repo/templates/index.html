@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/common.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/login.css') }}">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+    <div class="container">
+        <div class="inner">
+            <header class="header">
+                <h1>
+                    <span class="header_tit">로고</span>
+                    <a href="#" class="page_move">
+                        <img src="{{ url_for('static', filename='img/1600px-Instagram_logo.svg.png') }}" src="logo">
+                    </a>
+                </h1>
+            </header>
+
+            <!-- form -->
+            <form class="form" action="/result" method="POST">
+                <div class="input_box">
+                    <input name="id" id="id" type="text" placeholder="전화번호, 사용자 이름 또는 이메일"/>
+                </div>
+                <div class="input_box">
+                    <input name="pw" id="password" type="password" placeholder="비밀번호">
+                </div>
+                <div class="button_box">
+                    <button class="btn">
+                        <span>로그인</span>
+                    </button>
+                </div>
+            </form>
+         </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/login.js') }}"></script>
+</div>
+
+</body>
+</html>
