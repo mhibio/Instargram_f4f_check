@@ -1,5 +1,5 @@
 # Instagram_f4f_check
-Check your Instargram Follwer and Follweing with python instaloader
+Check your Instargram Follower and following with python instaloader
 only `python3`
 
 ## Setting
