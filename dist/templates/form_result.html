@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/result.css') }}">
+    <title>Result</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="title">Check Your Follow Status!</div>
+        </div>
+
+        <div class="container">
+            <div class="component">
+                <div class="subtitle_box">
+                    <div class="subtitle">
+                        Following but not Follower
+                    </div>
+                </div>
+
+                <div class="content_wrap">
+                    <div class="content">
+                        {% if result1 %} 
+                            {% for key, val in result1 %}   
+                            <div class="profile">
+                                <div class="image">
+                                    <img src="{{ url_for('static', filename='img/anonymous.jpg') }}">
+                                </div>
+                                <div class="value">
+                                    <div class="id"> {{ key }} </div>
+                                    <div class="name"> {{ val }} </div>
+                                </div>
+                            </div>
+                                {% endfor %}
+                        {% else %}
+                            <div style="font-weight: bold;">None</div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="component">
+                <div class="subtitle_box"> 
+                    <div class="subtitle">
+                        Not Following but Follower
+                    </div>
+                </div>
+
+                <div class="content_wrap">
+                    <div class="content">
+                        {% if result2 %}
+                            {% for key, val in result2 %}
+                            <div class="profile">
+                                <div class="image">
+                                    <img src="{{ url_for('static', filename='img/anonymous.jpg') }}">
+                                </div>
+                                <div class="value">
+                                    <div class="id"> {{ key }} </div>
+                                    <div class="name"> {{ val }} </div>
+                                </div>
+                            </div>
+                                {% endfor %}
+                        {% else %}
+                            <div style="font-weight: bold;">None</div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="button_box">
+                <button class="btn" type="button" onClick="location.href='/'">
+                    <span>뒤로가기</span>    
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
