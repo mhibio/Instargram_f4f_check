@@ -10,9 +10,9 @@ pip install instaloader
 
 ## Execute
 ```
-username = ""
-password = open("./password.txt", 'rb').read().decode()
+python main.py
+Please input your id : Your ID
+Please input your password : 
 ```
 
-fill the `username` and create `password.txt` file for login
-and just execute `python3 main.py`
+You can input your id and password safety!
