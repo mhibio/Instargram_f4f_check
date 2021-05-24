@@ -15,4 +15,4 @@ Please input your id : Your ID
 Please input your password : 
 ```
 
-You can input your id and password safety!
+You can input your id and password safety by getpass module!
