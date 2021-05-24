@@ -57,6 +57,10 @@ def page_not_found(error):
 def routing(): 
     return render_template('index.html')
 
+@app.route('/help')
+def help():
+    return render_template("help.html")
+    
 @app.route('/result', methods=['POST', 'GET'])
 def index(num=None):
     if request.method == "POST":

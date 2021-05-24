@@ -56,3 +56,7 @@ button {
 	outline: none;
 	cursor: pointer;
 }
+
+.help_message {
+	font-weight: bold;
+}

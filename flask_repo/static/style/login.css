@@ -82,3 +82,9 @@
     font-size: 15px;
     color: #003768;
 }
+
+.help_box {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style/common.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='style/login.css') }}">
 
-    <title>Document</title>
+    <title>index</title>
 </head>
 <body>
     <div class="wrap">
@@ -36,6 +36,12 @@
                     </button>
                 </div>
             </form>
+
+            <div class="help_box">
+                <a href="/help">
+                    <span class="help_msg">어떻게 사용하는 건가요?</span>
+                </a>
+            </div>
          </div>
     </div>
     <script src="{{ url_for('static', filename='js/login.js') }}"></script>
